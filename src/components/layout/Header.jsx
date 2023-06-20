@@ -6,7 +6,6 @@ import logo from "../../imgs/TicketPortal-transp.png";
 function Header() {
   return (
     <nav className={styles.navbar}>
-      <Container>
         <Link to="/">
           <img className={styles.img} src={logo} alt="TickerPortal.logo" />
         </Link>
@@ -17,8 +16,10 @@ function Header() {
           <li className={styles.item}>
             <Link to="/login">Login</Link>
           </li>
+          <li className={styles.item}>
+            <Link to="/cadastro">Cadastro</Link>
+          </li>
         </ul>
-      </Container>
     </nav>
   );
 }

@@ -11,11 +11,11 @@ function LoginPage() {
         <h1>Login</h1>
         <Form.Group className={styles.form_group} controlId="formBasicEmail">
           <Form.Label>Seu Email:</Form.Label>
-          <Form.Control type="email" placeholder="Digite o email" />
+          <Form.Control type="email" required/>
         </Form.Group>
         <Form.Group className={styles.form_group} controlId="formBasicPassword">
           <Form.Label>Sua Senha:</Form.Label>
-          <Form.Control type="password" placeholder="Digite a Senha" />
+          <Form.Control type="password" required/>
         </Form.Group>
         <Button className={styles.button} variant="primary" type="submit">
           Entrar

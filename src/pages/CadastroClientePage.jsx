@@ -11,27 +11,27 @@ function CadastroClientePage() {
         <h1>Cadastre-se</h1>
         <Form.Group className={styles.form_group} controlId="formBasicName">
           <Form.Label>Nome Completo:</Form.Label>
-          <Form.Control type="text"/>
+          <Form.Control type="text" minLength={3} maxLength={100} required/>
         </Form.Group>
         <Form.Group className={styles.form_group} controlId="formBasicCPF">
           <Form.Label>CPF:</Form.Label>
-          <Form.Control type="text"/>
+          <Form.Control type="text" minLength={11} maxLength={18} required/>
         </Form.Group>
         <Form.Group className={styles.form_group} controlId="formBasicPhone">
           <Form.Label>Telefone:</Form.Label>
-          <Form.Control type="text"/>
+          <Form.Control type="text" maxLength={15} required/>
         </Form.Group>
         <Form.Group className={styles.form_group} controlId="formBasicEmail">
           <Form.Label>Email:</Form.Label>
-          <Form.Control type="email"/>
+          <Form.Control type="email" maxLength={100} required/>
         </Form.Group>
         <Form.Group className={styles.form_group} controlId="formBasicPassword">
           <Form.Label>Senha:</Form.Label>
-          <Form.Control type="password"/>
+          <Form.Control type="password" minLength={6} required/>
         </Form.Group>
         <Form.Group className={styles.form_group} controlId="formBasicPasswordConfirm">
           <Form.Label>Confirmar Senha:</Form.Label>
-          <Form.Control type="password"/>
+          <Form.Control type="password" minLength={6} required/>
         </Form.Group>
         <Button className={styles.button} variant="primary" type="submit">
           Confirmar
